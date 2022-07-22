@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Finding Falcone</string>
+    <string name="btn_find_princes">Find Princes</string>
+    <string name="nothing_to_select">Nothing To Select</string>
+    <string name="princes_found_on">Congratulations! Princes found on %s Planet</string>
+    <string name="princes_not_found">Sorry! Princes not found</string>
+
+    <string name="status_message">Success! Congratulations on Finding Falcone. King Shan is mighty pleased.</string>
+    <string name="time_taken_result">Time Taken : %s Hours</string>
+    <string name="planet_found_result">Planet Found : %s</string>
+</resources>

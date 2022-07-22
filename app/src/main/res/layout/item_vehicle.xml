@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shuttleContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_margin"
+    tools:context=".presentation.MainActivity">
+
+    <ImageView
+        android:id="@+id/shuttleImage"
+        android:layout_width="90dp"
+        android:layout_height="130dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_space_ship"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/shuttleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Space Rocket"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dimen_space_planet"
+        android:layout_marginTop="@dimen/dimen_space_planet"
+        android:textAppearance="@style/App.TextAppearance.Body1"
+        app:layout_constraintStart_toEndOf="@id/shuttleImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/shuttleSpeedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed : 3 megamiles/hour"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@style/App.TextAppearance.Body1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/shuttleName"
+        app:layout_constraintTop_toBottomOf="@+id/shuttleName" />
+
+    <TextView
+        android:id="@+id/shuttleMaxDist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Distance : 300 megamiles"
+        android:layout_marginTop="5dp"
+        android:textAppearance="@style/App.TextAppearance.Body1"
+        app:layout_constraintStart_toStartOf="@id/shuttleName"
+        app:layout_constraintTop_toBottomOf="@+id/shuttleSpeedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

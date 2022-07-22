@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/galaxy_image"
+    tools:context=".presentation.MainActivity">
+
+    <ImageView
+        android:id="@+id/planet6Image"
+        android:layout_width="@dimen/dimen_img"
+        android:layout_height="@dimen/dimen_img"
+        android:src="@drawable/ic_pingasor"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/planet5Image"/>
+
+    <TextView
+        android:id="@+id/planet6Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="@style/App.TextAppearance.subtitle"
+        app:layout_constraintEnd_toEndOf="@id/planet6Image"
+        app:layout_constraintStart_toStartOf="@id/planet6Image"
+        app:layout_constraintTop_toBottomOf="@id/planet6Image"
+        tools:text="Pingasor" />
+
+    <TextView
+        android:id="@+id/planet6Dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="@style/App.TextAppearance.subtitle"
+        app:layout_constraintEnd_toEndOf="@id/planet6Image"
+        app:layout_constraintStart_toStartOf="@id/planet6Image"
+        app:layout_constraintTop_toBottomOf="@id/planet6Name"
+        tools:text="Pingasor" />
+
+    <ImageView
+        android:id="@+id/planet6Shuttle"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/planet6Image"
+        app:layout_constraintEnd_toEndOf="@id/planet6Image" />
+
+    <ImageView
+        android:id="@+id/planet5Image"
+        android:layout_width="@dimen/dimen_img"
+        android:layout_height="@dimen/dimen_img"
+        android:src="@drawable/ic_lerbin"
+        android:visibility="gone"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/planet6Image"
+        app:layout_constraintTop_toTopOf="@id/planet6Image"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/planet5Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="@style/App.TextAppearance.subtitle"
+        app:layout_constraintEnd_toEndOf="@id/planet5Image"
+        app:layout_constraintStart_toStartOf="@id/planet5Image"
+        app:layout_constraintTop_toBottomOf="@id/planet5Image"
+        tools:text="Lerbin" />
+
+    <TextView
+        android:id="@+id/planet5Dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="@style/App.TextAppearance.subtitle"
+        app:layout_constraintEnd_toEndOf="@id/planet5Image"
+        app:layout_constraintStart_toStartOf="@id/planet5Image"
+        app:layout_constraintTop_toBottomOf="@id/planet5Name"
+        tools:text="Pingasor" />
+
+
+    <ImageView
+        android:id="@+id/planet5Shuttle"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/planet5Image"
+        app:layout_constraintEnd_toEndOf="@id/planet5Image" />
+
+    <ImageView
+        android:id="@+id/planet4Image"
+        android:layout_width="@dimen/dimen_img"
+        android:layout_height="@dimen/dimen_img"
+        android:src="@drawable/ic_sapir"
+        android:visibility="gone"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="@dimen/dimen_space_planet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/planet6Dist"
+        app:layout_constraintEnd_toStartOf="@id/planet3Image"/>
+
+    <TextView
+        android:id="@+id/planet4Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="@style/App.TextAppearance.subtitle"
+        app:layout_constraintEnd_toEndOf="@id/planet4Image"
+        app:layout_constraintStart_toStartOf="@id/planet4Image"
+        app:layout_constraintTop_toBottomOf="@id/planet4Image"
+        tools:text="Sapir" />
+
+    <TextView
+        android:id="@+id/planet4Dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="@style/App.TextAppearance.subtitle"
+        app:layout_constraintEnd_toEndOf="@id/planet4Image"
+        app:layout_constraintStart_toStartOf="@id/planet4Image"
+        app:layout_constraintTop_toBottomOf="@id/planet4Name"
+        tools:text="Pingasor" />
+
+
+    <ImageView
+        android:id="@+id/planet4Shuttle"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/planet4Image"
+        app:layout_constraintEnd_toEndOf="@id/planet4Image" />
+
+    <ImageView
+        android:id="@+id/planet3Image"
+        android:layout_width="@dimen/dimen_img"
+        android:layout_height="@dimen/dimen_img"
+        android:src="@drawable/ic_jebing"
+        android:visibility="gone"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/planet4Image"
+        app:layout_constraintTop_toTopOf="@id/planet4Image"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/planet3Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="@style/App.TextAppearance.subtitle"
+        app:layout_constraintEnd_toEndOf="@id/planet3Image"
+        app:layout_constraintStart_toStartOf="@id/planet3Image"
+        app:layout_constraintTop_toBottomOf="@id/planet3Image"
+        tools:text="Jebing" />
+
+    <TextView
+        android:id="@+id/planet3Dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="@style/App.TextAppearance.subtitle"
+        app:layout_constraintEnd_toEndOf="@id/planet3Image"
+        app:layout_constraintStart_toStartOf="@id/planet3Image"
+        app:layout_constraintTop_toBottomOf="@id/planet3Name"
+        tools:text="Pingasor" />
+
+
+    <ImageView
+        android:id="@+id/planet3Shuttle"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/planet3Image"
+        app:layout_constraintEnd_toEndOf="@id/planet3Image" />
+
+    <ImageView
+        android:id="@+id/planet2Image"
+        android:layout_width="@dimen/dimen_img"
+        android:layout_height="@dimen/dimen_img"
+        android:src="@drawable/ic_enchai"
+        android:visibility="gone"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="@dimen/dimen_space_planet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/planet1Image"
+        app:layout_constraintTop_toBottomOf="@id/planet4Dist" />
+
+    <TextView
+        android:id="@+id/planet2Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="@style/App.TextAppearance.subtitle"
+        app:layout_constraintEnd_toEndOf="@id/planet2Image"
+        app:layout_constraintStart_toStartOf="@id/planet2Image"
+        app:layout_constraintTop_toBottomOf="@+id/planet2Image"
+        tools:text="Enchai" />
+
+    <TextView
+        android:id="@+id/planet2Dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="@style/App.TextAppearance.subtitle"
+        app:layout_constraintEnd_toEndOf="@id/planet2Image"
+        app:layout_constraintStart_toStartOf="@id/planet2Image"
+        app:layout_constraintTop_toBottomOf="@id/planet2Name"
+        tools:text="Pingasor" />
+
+
+    <ImageView
+        android:id="@+id/planet2Shuttle"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/planet2Image"
+        app:layout_constraintEnd_toEndOf="@id/planet2Image" />
+
+    <ImageView
+        android:id="@+id/planet1Image"
+        android:layout_width="@dimen/dimen_img"
+        android:layout_height="@dimen/dimen_img"
+        android:src="@drawable/ic_donlon"
+        android:visibility="gone"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/planet2Image"
+        app:layout_constraintTop_toTopOf="@id/planet2Image"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/planet1Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="@style/App.TextAppearance.subtitle"
+        app:layout_constraintEnd_toEndOf="@id/planet1Image"
+        app:layout_constraintStart_toStartOf="@id/planet1Image"
+        app:layout_constraintTop_toBottomOf="@id/planet1Image"
+        tools:text="Donlon" />
+
+    <TextView
+        android:id="@+id/planet1Dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAppearance="@style/App.TextAppearance.subtitle"
+        app:layout_constraintEnd_toEndOf="@id/planet1Image"
+        app:layout_constraintStart_toStartOf="@id/planet1Image"
+        app:layout_constraintTop_toBottomOf="@id/planet1Name"
+        tools:text="Pingasor" />
+
+    <ImageView
+        android:id="@+id/planet1Shuttle"
+        android:layout_width="40dp"
+        android:layout_height="55dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/planet1Image"
+        app:layout_constraintEnd_toEndOf="@id/planet1Image" />
+
+    <Button
+        android:id="@+id/btnFind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorGray"
+        android:enabled="false"
+        android:textColor="@color/colorGrayDark"
+        android:text="@string/btn_find_princes"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

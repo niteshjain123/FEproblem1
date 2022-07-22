@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_img">120dp</dimen>
+    <dimen name="dimen_space_planet">25dp</dimen>
+    <dimen name="dimen_margin">7dp</dimen>
+
+</resources>
